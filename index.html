@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PVP MASTER — Guia Completo de PvP para Minecraft Java</title>
+    <style>
+        body { font-family: 'Segoe UI', Arial, sans-serif; background: #0c0c12; color: #e2e2e6; margin: 0; padding: 20px; text-align: left; }
+        .container { max-width: 900px; margin: 0 auto; background: #161622; padding: 30px; border-radius: 16px; border: 2px solid #00ff88; box-shadow: 0 0 30px rgba(0, 255, 136, 0.15); }
+        header { text-align: center; margin-bottom: 40px; }
+        h1 { color: #00ff88; font-size: 3rem; margin: 0; text-transform: uppercase; letter-spacing: 2px; }
+        .subtitle { color: #a2a2b0; font-size: 1.2rem; margin-top: 10px; }
+        h2 { color: #00ff88; font-size: 1.8rem; margin-top: 40px; border-bottom: 2px solid #2d2d3d; padding-bottom: 10px; text-transform: uppercase; }
+        h3 { color: #ffffff; font-size: 1.4rem; margin-top: 0; }
+        p { color: #d1d1db; line-height: 1.6; font-size: 1.05rem; }
+        ul { color: #d1d1db; line-height: 1.6; }
+        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px; }
+        .card { background: #1f1f30; padding: 20px; border-radius: 8px; border-left: 4px solid #00ff88; }
+        .highlight { color: #00ff88; font-weight: bold; }
+        .warning { color: #ff5555; font-style: italic; }
+        .plans-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin-top: 20px; }
+        .plan-card { background: #1f1f30; padding: 15px; border-radius: 8px; border: 1px solid #2d2d3d; text-align: center; }
+        .plan-card.active { border: 2px solid #00ff88; }
+        .price { font-size: 1.4rem; color: #00ff88; font-weight: bold; margin: 10px 0; }
+        .plan-features { font-size: 0.9rem; text-align: left; padding-left: 15px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>PVP MASTER</h1>
+            <div class="subtitle">Guia Completo de PvP para Minecraft Java (Sword, Cpvp, Mace, Redstone)</div>
+        </header>
+
+        <section>
+            <h2>Domine o PvP de qualquer idade, de qualquer nível</h2>
+            <p>Um guia completo — do jogador iniciante ao veterano — sobre estilos de combate, contraptions de redstone e as técnicas mais usadas por quem joga PvP de verdade. Tudo explicado de um jeitinho fácil de entender.</p>
+        </section>
+
+        <section>
+            <h2>01 — Estilos de Combate</h2>
+            <p>Cada estilo de PvP tem sua própria "personalidade". Veja como cada um funciona e uma curiosidade de cada arma em ação.</p>
+            
+            <div class="grid">
+                <div class="card">
+                    <h3>🗡 SWORD PVP</h3>
+                    <p>O estilo clássico, base de todos os outros. O combate com espada é sobre ritmo: acertar, recuar e voltar a acertar antes que o inimigo se recupere.</p>
+                    <ul>
+                        <li><span class="highlight">W-tap:</span> toque rapidamente em W depois de atacar para reduzir o knockback recebido.</li>
+                        <li><span class="highlight">Crit jump:</span> pule e ataque na queda para causar dano crítico extra.</li>
+                    </ul>
+                    <p><em>Característica de mob:</em> Todo golpe crítico solta uma chuva de estrelinhas amarelas!</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔮 CPVP (CRYSTAL)</h3>
+                    <p>Explosivo, arriscado e de altíssimo dano. Usa cristais do fim colocados sobre obsidiana ou bedrock para gerar explosões controladas.</p>
+                    <ul>
+                        <li>Coloque o cristal rente ao inimigo e quebre-o na sequência.</li>
+                        <li>Use Proteção contra Explosão (Blast Protection) na armadura.</li>
+                    </ul>
+                    <p><em>Característica de mob:</em> A explosão ilumina a tela de roxo e branco por um instante!</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔨 MACE PVP</h3>
+                    <p>A arma mais nova, feita para atacar do alto (update Tricky Trials). Quanto maior a queda antes do golpe, mais forte é o Smash Attack.</p>
+                    <ul>
+                        <li>Ganhe altura com elytra ou wind charge antes de descer.</li>
+                        <li>Use o encantamento Impulso do Vento (Wind Burst) para voltar ao ar.</li>
+                    </ul>
+                    <p><em>Característica de mob:</em> O chão racha com uma partícula de impacto e treme a câmera!</p>
+                </div>
+
+                <div class="card">
+                    <h3>🔱 LANÇA (TRIDENTE)</h3>
+                    <p>Alcance longo e investidas relâmpago. Seu alcance é maior que o da espada, ideal para manter distância.</p>
+                    <ul>
+                        <li>Riptide só funciona na água ou durante a chuva.</li>
+                        <li>Mantenha distância e "cutuque" o oponente aproveitando o alcance.</li>
+                    </ul>
+                    <p><em>Característica de mob:</em> Usar Riptide na chuva faz você disparar como um raio!</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>02 — Arsenal de Redstone</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>🧨 Canhão Orbital (TNT Cannon)</h3>
+                    <p>Usa uma TNT de "carga" detonada dentro da água para empurrar uma segunda TNT (o "tiro") por uma longa distância, sem destruir a própria estrutura.</p>
+                    <p class="warning">⚠ A água absorve a explosão da carga, mas o tiro continua destrutivo.</p>
+                </div>
+                <div class="card">
+                    <h3>🛡 Quebra-Armadura (Durability Trap)</h3>
+                    <p>Armadilha com dispensers disparando flechas ou projéteis repetidamente para reduzir a durabilidade da armadura até ela quebrar.</p>
+                </div>
+                <div class="card">
+                    <h3>🕳 Gaiola Anti-Cristal (Obsidian Cage)</h3>
+                    <p>Uma pequena "jaula" de obsidiana ou bedrock construída ao redor de um jogador para impedir que cristais do fim sejam colocados perto.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>03 — Técnica Avançada: Vara de Pesca</h2>
+            <h3>🎣 Método Vanilla (Sem mods)</h3>
+            <p>A vara de pesca consegue fisgar uma placa de pressão a até 32 blocos de distância e ativá-la remotamente. Serve como um "controle remoto" perfeito para disparar o canhão orbital sem se expor.</p>
+            <h3>⚙ Método por Comandos (OP / Datapack)</h3>
+            <p>Em servidores com permissão de operador e datapacks (estilo Wemmbu), cria uma vara de pesca customizada que invoca uma chuva de TNT onde a isca cair.</p>
+        </section>
+
+        <section>
+            <h2>04 — Escolha seu Plano</h2>
+            <div class="plans-grid">
+                <div class="plan-card active">
+                    <h3>Grátis</h3>
+                    <div class="price">R$0 /mês</div>
+                    <ul class="plan-features">
+                        <li>Visão geral dos estilos</li>
+                        <li>Guias de redstone</li>
+                        <li>Quiz interativo básico</li>
+                    </ul>
+                </div>
+                <div class="plan-card">
+                    <h3>Bronze</h3>
+                    <div class="price">R$5 /mês</div>
+                    <ul class="plan-features">
+                        <li>Kits por estilo</li>
+                        <li>PDF de configs</li>
+                        <li>Checklist de aquecimento</li>
+                    </ul>
+                </div>
+                <div class="plan-card">
+                    <h3>Prata</h3>
+                    <div class="price">R$10 /mês</div>
+                    <ul class="plan-features">
+                        <li>Vídeo-aulas exclusivas</li>
+                        <li>Resource pack PvP</li>
+                        <li>Discord VIP</li>
+                    </ul>
+                </div>
+                <div class="plan-card">
+                    <h3>Diamante</h3>
+                    <div class="price">R$15 /mês</div>
+                    <ul class="plan-features">
+                        <li>Técnicas de torneio</li>
+                        <li>Análise de gameplay</li>
+                        <li>Badge exclusivo</li>
+                    </ul>
+                </div>
+            </div>
+            <p style="margin-top: 20px;">Contato para planos via WhatsApp ou Instagram: <span class="highlight">@sayonfonix</span></p>
+        </section>
+    </div>
+</body>
+</html>
